@@ -1,0 +1,30 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.calculator {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+#display {
+    width: 180px;
+    height: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    font-size: 18px;
+}

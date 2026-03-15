@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio - Élève STI2D</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+/* MENU */
+nav{
+    background:#333;
+    padding:10px;
+}
+
+nav a{
+    color:rgb(0, 0, 0);
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00bcd4;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:60px;
+    background:#00bcd4;
+    color:rgb(0, 0, 0);
+}
+
+/* SECTIONS */
+section{
+    padding:40px;
+    max-width:900px;
+    margin:auto;
+}
+
+/* PROJETS */
+.projet{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* COMPETENCES */
+.competence{
+    background:#e3f7fa;
+    padding:10px;
+    margin:5px;
+    display:inline-block;
+    border-radius:5px;
+}
+
+/* BOUTON */
+button{
+    padding:10px 20px;
+    border:none;
+    background:#00bcd4;
+    color:rgb(0, 0, 0);
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0097a7;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#333;
+    color:white;
+}
+
+#texte{
+      color: black;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#projets">Projets</a>
+<a href="#competences">Compétences</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header id="accueil">
+<h1>Simon Dury</h1><img src="photo-Simon.jpg" alt="Photo de Simon" width="200">
+<p>Élève de Terminale STI2D</p>
+<p>Lycée Jules Fil</p>
+<button onclick="message()">Clique pour en savoir plus</button>
+<p id="texte"></p>
+</header>
+
+</section>
+
+<section id="competences">
+<h2>Compétences</h2>
+
+<span class="competence">HTML</span>
+<span class="competence">CSS</span>
+<span class="competence">un peu de JavaScript</span>
+<span class="competence">un peu d'Arduino</span>
+<span class="competence">un peu de C</span>
+
+</section>
+
+<section id="projets">
+<h2>Mes Projets</h2>
+
+<div class="projet">
+<h3>Projet petit jeu <u><a href="Untitled-3.html">deviner un nombre</u></a></h3>
+<a href="Untitled-3.html"></a></a>
+</div>
+
+<div class="projet">
+<h3>Projet <u><a href="Untitled-4.html">calculatrice</a></u></h3>
+</div>
+
+<div class="projet">
+<h3>Projet <u><a href="Untitled-2.html">générateur de mot de passe</a></u></h3>
+</div>
+
+<div class="projet">
+<h3>Autres projets personnels</h3>
+<img src="photo-darkvadder.jpg" alt="Photo darkvadder" width="200">
+<img src="photo-robot.jpg" alt="Photo robot" width="200">
+<img src="photo-ak47bois.jpg" alt="Photo ak47bois" width="200">
+</div>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email : simondury11@gmail.com</p>
+<p>Téléphone : 07 81 89 20 57</p>
+</section>
+
+<footer>
+<p>© 2026 - Portfolio STI2D</p>
+</footer>
+
+<script>
+function message(){
+    document.getElementById("texte").innerHTML =
+    "J'ai 18 ans" + "<br>" + "Je suis un élève passionné par la technologie, l'ingénierie et la programmation." + "<br>" + "Mon objectif est de poursuivre des études en informatique et progresser dans le développement logiciel.";
+}
+</script>
+
+</body>
+</html>
